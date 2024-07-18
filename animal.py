@@ -5,3 +5,6 @@ class Animal:
 
     def exibir_informacoes(self):
         return f"Nome do animal: {self._nome}, Idade: {self.idade} anos"
+
+    def emitir_som(self):
+        return "O animal emite um som."
