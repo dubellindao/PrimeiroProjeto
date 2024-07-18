@@ -5,5 +5,3 @@ class Animal:
 
     def exibir_informacoes(self):
         return f"Nome do animal: {self._nome}, Idade: {self.idade} anos"
-
-#teste
