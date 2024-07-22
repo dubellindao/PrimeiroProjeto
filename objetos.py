@@ -1,15 +1,11 @@
-from animal import *
+from animes import *
 
-# Exemplo de uso
-animal = Animal("Bicho", 5)
-print(animal.exibir_informacoes())
-print(animal.emitir_som())
+# Exemplo de uso da classe pai
+anime = Anime("Naruto", "Masashi Kishimoto", 2002, "123-456-789", "Studio Pierrot")
+print(anime.exibir_informacoes())
+print(anime.exibir_codigo_interno())
 
-cachorro = Cachorro("Rex", 3, "Labrador", 30)
-print(cachorro.exibir_detalhes())
-print(cachorro.emitir_som())
-print(f"Idade em anos humanos: {cachorro.calcular_idade_humana()}")
-
-# Atualizando o peso do cachorro
-cachorro.atualizar_peso(32)
-print(cachorro.exibir_detalhes())
+# Exemplo de uso da classe herdeira
+anime_streaming = AnimeStreaming("Attack on Titan", "Hajime Isayama", 2013, "987-654-321", "Wit Studio", "Crunchyroll", 75, True)
+print(anime_streaming.exibir_detalhes())
+print(anime_streaming.verificar_legendado())
